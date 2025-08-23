@@ -1,8 +1,8 @@
-# SForth - Interpretador Forth do SynctLabs
+# SForth - Interpretador Forth da SynctLabs
 
 **Versão:** 1.0.0
 **Linguagem:** Node.js
-**Autor:** SynctLabs
+**Autor:** Leonardo Pinezi
 
 ---
 
