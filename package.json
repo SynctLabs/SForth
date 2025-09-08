@@ -1,6 +1,6 @@
 {
   "name": "sforth",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Simple forth language interpreter made with Js",
   "main": "index.js",
   "bin": "index.js",
@@ -10,6 +10,10 @@
   "author": "Leonardo Pinezi",
   "license": "MIT",
   "pkg": {
-    "targets": ["node18-win-x64", "node18-linux-x64", "node18-macos-x64"]
+    "targets": [
+      "node18-win-x64",
+      "node18-linux-x64",
+      "node18-macos-x64"
+    ]
   }
 }
