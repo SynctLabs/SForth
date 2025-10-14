@@ -52,9 +52,9 @@ sforth -v
 
 ## Flags para usar
 
-* `-v` : Mostra a versão.
-* `-noexit` : Não mostra "Ok" depois de executar um comando, ela é utilizada dentro do script.
-* `-vanish` : Mostra os comandos enquanto são executados, , ela é utilizada dentro do script.
+* `-v`, `--version` : Mostra a versão.
+* `-q`, `--quiet` : Omite "Ok" depois de executar um comando.
+* `-V`, `--verbose` : Força impressão de "Ok" após comandos executados.
 
 ---
 
@@ -65,8 +65,8 @@ sforth -v
 3. **Pilha e listas:**
 
    * `stack` : Pilha principal para os números.
-   * `flags` : Lista de flags usadas.
-   * `words` : Palavras criadas pelo usuário.
+   * `builtinWords` : Palavras nativas do Forth.
+   * `userWords` : Palavras criadas pelo usuário.
 4. **Tokens:** Cada token é uma função que faz algo na pilha ou mostra resultados.
 5. **Processar o código:** O programa lê cada token e executa em ordem.
 
@@ -80,9 +80,9 @@ sforth -v
 | `-`                    | Subtrai o último pelo penúltimo                              |
 | `*`                    | Multiplica os dois últimos                                   |
 | `/`                    | Divide o penúltimo pelo último                               |
-| `MOD`                  | Resto da divisão do penúltimo pelo último                    |
+| `mod`                  | Resto da divisão do penúltimo pelo último                    |
 | `.`                    | Mostra o último número                                       |
-| `.S`                   | Mostra todos os números da pilha                             |
+| `.s`                   | Mostra todos os números da pilha                             |
 | `dup`                  | Copia o último número                                        |
 | `drop`                 | Apaga o último número                                        |
 | `swap`                 | Troca os dois últimos números                                |
